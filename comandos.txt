@@ -1,0 +1,8 @@
+php artisan make:controller PessoaController --resource
+php artisan make:controller DependenteController --resource
+php artisan make:model Models\ModelPessoa -m
+php artisan make:model Models\ModelDependente -m
+php artisan migrate
+
+php artisan make:request PessoaRequest
+php artisan make:request DependenteRequest
